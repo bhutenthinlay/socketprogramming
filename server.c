@@ -76,5 +76,6 @@ int main(int argc, char *argv[]){
 		close(data_socket);
 	}
 	close(connection_socket);
+	unlink(SOCKET_NAME);
 	return EXIT_SUCCESS;
 }
